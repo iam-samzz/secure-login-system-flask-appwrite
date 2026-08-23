@@ -23,7 +23,7 @@ This project implements a secure login system authentication and file access sys
 7. Windows: `py -m pip install -r requirements.txt`
 8. macOS / Linux: `python3 -m pip install -r requirements.txt`
 9. **Start the server:** Type `python app.py` in your terminal to run the server.
-10. **View the application:** Open your web browser and navigate to `http://localhost:5000`.
+10. **View the application:** Open your web browser and navigate to `http://localhost:5000` **IN BROWSER only**.
 11. **Windows Alternative:** If you are a Windows user, you can skip the manual terminal commands entirely by simply double-clicking the `start.bat` file inside the `/flask_backend_implementation` folder to automatically configure and start the server.
 
 
@@ -48,7 +48,7 @@ This project implements a secure login system authentication and file access sys
 2. Linux/Mac user: `python3 -m http.server 8080`
 3. Windows users: `python -m http.server 8080`
 4. once you strted the server inside your `/appwrite_implementation` , go to web browser
-5. open `localhost:8080`
+5. open `localhost:8080`, **IN BROWSER only**
 
 ---
 
