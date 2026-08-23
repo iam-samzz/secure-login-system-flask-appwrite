@@ -8,6 +8,8 @@ This project implements a secure login system authentication and file access sys
 
 ## SETUP AND INSTALLATION
 
+*Better clone repo and run this proj inside python virtual env for avoiding any kind of external errors.*
+
 ## Running the Flask Backend
 
 1. **Clone the repository** to your local computer.
