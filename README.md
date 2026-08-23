@@ -51,6 +51,14 @@ This project implements a secure login system authentication and file access sys
 4. once you strted the server inside your `/appwrite_implementation` , go to web browser
 5. open `localhost:8080`, **IN BROWSER only**
 
+I have already put my appwrite Endpoint and ID's  in default values inside index.html. Anyway , I think this will be useful:
+
+   `endpoint`: `https://sgp.cloud.appwrite.io/v1`
+   `project id` : `6a89ff85000aa38c77d1`
+   `database id`: `6a8a04a200390219f43b`
+   `file collection id` : `files`
+   `storage bucket id` : `profiles`
+   
 ---
 
 ## Changes in Default Values (`templates/index.html`)
