@@ -54,10 +54,17 @@ This project implements a secure login system authentication and file access sys
 I have already put my appwrite Endpoint and ID's  in default values inside index.html. Anyway , I think this will be useful:
 
    `endpoint`: `https://sgp.cloud.appwrite.io/v1`
+   <br>
    `project id` : `6a89ff85000aa38c77d1`
+   <br>
    `database id`: `6a8a04a200390219f43b`
+   <br>
    `file collection id` : `files`
+   <br>
    `storage bucket id` : `profiles`
+   <br>
+   
+   
    
 ---
 
