@@ -17,6 +17,20 @@
 10. **View the application:** Open your web browser and navigate to `http://localhost:5000`.
 11. **Windows Alternative:** If you are a Windows user, you can skip the manual terminal commands entirely by simply double-clicking the `start.bat` file inside the `/flask_backend_implementation` folder to automatically configure and start the server.
 
+## Running Appwrite as Backend
+1. open  `/appwrite_implementation` (`cd appwrite_implementation` )
+2. Linux/Mac user: `python3 -m http.server 8080`
+3. Windows users: `python -m http.server 8080`
+4. once you strted the server inside your `/appwrite_implementation` , go to web browser
+5. open `localhost:8080`
+
+## chanages in default value in index.html
+1. actually I have changed the default port value from `locahsot:3000` to `localhost:5000` in `templates/index.html` on line 31 and chanded the `checked` atribute of the `radio` in `templates/index.html` to Backend on line 25, to make it easier to use for the `Flask backend implementation`.
+2. For appwrite implementation, I had changed the `checked` attribute for radio in line 26, for making it easier for the users.
+
+only these changes are made, other then that, no changes are made in the Graphical interface.
+
+---
 
 This project implements a secure authentication and file management system using **two distinct backend approaches** as required:
 1. A **Custom Backend** built with Python (Flask) and PostgreSQL.
@@ -35,6 +49,7 @@ The project features secure password hashing using Argon3, strict data isolation
 
 **In Flask (Custom Backend):** The /logout route calls session.clear(). This instantly wipes the user's data from the server's session store.
 **In Appwrite (Managed Backend):** The frontend adapter calls the SDK method account.deleteSession('current'). This sends an authenticated API request to Appwrite's servers, which explicitly revokes and deletes the session token from their database, invalidating it globally.
+
 ---
 
 ## Data Isolation
