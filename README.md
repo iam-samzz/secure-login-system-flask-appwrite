@@ -26,7 +26,7 @@ This project implements a secure login system authentication and file access sys
 
 <figure>
    <img width="877" height="327" alt="image" src="https://github.com/user-attachments/assets/589a38e6-f6d4-4e7b-b0be-cfc842fc9aab" style="display:inline"/>
-   
+   <br>
    <figcaption>Sample .env credentials</figcaption>
 </figure>
 
