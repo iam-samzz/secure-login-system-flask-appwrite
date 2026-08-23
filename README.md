@@ -1,6 +1,22 @@
 
 # Secure Login & File Management System
 
+## SETUP AND INSTALLATION
+
+## FOR BACKEND (FLASK APP):
+
+1. Clone this repo to your local computer.
+2. Open the `/flask_backend_implementation` folder.
+3. Open the `.env.example` file.
+4. In `.env.example`, there are examples of local variables which you need to enter before running the app.
+5. Replace the sample PostgreSQL database URL with your actual URL (make sure the format is exactly the same).
+6. Replace the sample secret key with your own secret key or some random long password.
+7. Once you change the local variables in `.env.example`, type `cp .env.example .env` in your terminal (inside `/flask_backend_implementation`).
+8. Then, type `python app.py` in your terminal to run the server and open `http://localhost:5000` to view the page.
+9. **Note:** Do all the above steps inside `/flask_backend_implementation`.
+10. If you are a Windows user, you can also just double-click the `start.bat` file inside `/flask_backend_implementation`.
+
+
 This project implements a secure authentication and file management system using **two distinct backend approaches** as required:
 1. A **Custom Backend** built with Python (Flask) and PostgreSQL.
 2. A **Managed Backend** using Appwrite (BaaS) with a custom JavaScript adapter.
@@ -49,4 +65,4 @@ Frontend Integration: Writing the appwrite-adapter.js to map the UI button click
 6. Add a comprehensive test suite using pytest
 7. would have implemented 2FA
 
-##SETUP AND INSTALLATION
+
