@@ -2,7 +2,7 @@
 # Secure Login & File Management System
 
 
-This project implements a secure authentication and file management system using **two distinct backend approaches** as required:
+This project implements a secure login system authentication and file access system using **two distinct backend approaches** as required:
 1. A **Custom Backend** built with Python (Flask) and PostgreSQL.
 2. A **Managed Backend** using Appwrite (BaaS) with a custom JavaScript adapter.
 
@@ -22,12 +22,16 @@ This project implements a secure authentication and file management system using
 10. **View the application:** Open your web browser and navigate to `http://localhost:5000`.
 11. **Windows Alternative:** If you are a Windows user, you can skip the manual terminal commands entirely by simply double-clicking the `start.bat` file inside the `/flask_backend_implementation` folder to automatically configure and start the server.
 
+---
+
 ## Running Appwrite as Backend
 1. open  `/appwrite_implementation` (`cd appwrite_implementation` )
 2. Linux/Mac user: `python3 -m http.server 8080`
 3. Windows users: `python -m http.server 8080`
 4. once you strted the server inside your `/appwrite_implementation` , go to web browser
 5. open `localhost:8080`
+
+---
 
 ## Changes in Default Values (`templates/index.html`)
 
@@ -49,11 +53,13 @@ Only these changes are made, other then that, no changes are made in the Graphic
 
    
 ---
-**In This Project, I've Used **session** based authentication over JWT because:**
+
+## In This Project, I've Used **session** based authentication over JWT because:
 
   1. Instant Server-Side Logout: The project requires immediate session invalidation upon logout. With cookies, session.clear() instantly destroys the session on the server. With stateless JWTs, achieving this requires complex and resource-heavy token blacklisting.
   2. Session-based authentication is generally safer for most standard web applications because it gives you absolute control over user access and mitigates the massive security risks associated with client-side token storage.
   3. Protection Against Token Theft: JWTs are frequently stored in HTML5 LocalStorage, which is highly vulnerable to Cross-Site Scripting (XSS) attacks. If an attacker injects a malicious script into your frontend, they can read the LocalStorage and steal the JWT. Sessions use HttpOnly and Secure cookies, which completely blocks JavaScript from reading the session ID.
+
 ---
 
 ## Logout implementation 
@@ -70,6 +76,7 @@ In Flask (Custom Backend): We prevent Insecure Direct Object Reference (IDOR) at
 In Appwrite (Managed Backend): Isolation is enforced at the database level using Collection Permissions (Row-Level Security). The database is configured to only allow Read access to authenticated users. Furthermore, the frontend adapter explicitly filters all requests using Query.equal('ownerId', user.$id), ensuring the database only ever returns documents owned by the currently logged-in user.
 
 ---
+
 **Handled Automatically by Appwrite:**
 Secure password hashing, salting, and validation.
 Session management, cookie handling, and token generation.
