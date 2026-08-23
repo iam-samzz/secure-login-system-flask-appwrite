@@ -33,6 +33,12 @@ This project implements a secure login system authentication and file access sys
    <figcaption>Sample .env credentials</figcaption>
 </figure>
 
+<figure>
+   <img width="1651" height="897" alt="image" src="https://github.com/user-attachments/assets/882425e0-0ce3-469a-8468-d54b0c39fd8e" />
+   <br>
+   <figcaption>Sample app test</figcaption>
+</figure>
+
 ---
 
 ## Running Appwrite as Backend
