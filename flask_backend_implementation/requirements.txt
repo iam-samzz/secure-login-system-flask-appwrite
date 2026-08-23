@@ -1,0 +1,9 @@
+flask
+python-dotenv
+psycopg[binary]
+psycopg2-binary
+email_validator
+argon2-cffi
+flask-sqlalchemy
+flask-limiter
+flask-cors
