@@ -1,6 +1,11 @@
 
 # Secure Login & File Management System
 
+
+This project implements a secure authentication and file management system using **two distinct backend approaches** as required:
+1. A **Custom Backend** built with Python (Flask) and PostgreSQL.
+2. A **Managed Backend** using Appwrite (BaaS) with a custom JavaScript adapter.
+
 ## SETUP AND INSTALLATION
 
 ## Running the Flask Backend
@@ -24,19 +29,25 @@
 4. once you strted the server inside your `/appwrite_implementation` , go to web browser
 5. open `localhost:8080`
 
-## chanages in default value in index.html
-1. actually I have changed the default port value from `locahsot:3000` to `localhost:5000` in `templates/index.html` on line 31 and chanded the `checked` atribute of the `radio` in `templates/index.html` to Backend on line 25, to make it easier to use for the `Flask backend implementation`.
-2. For appwrite implementation, I had changed the `checked` attribute for radio in line 26, for making it easier for the users.
+## Changes in Default Values (`templates/index.html`)
 
-only these changes are made, other then that, no changes are made in the Graphical interface.
+1. **Updated Default Port**: Changed the default host value from `localhost:3000` to `localhost:5000` on line 31 to optimize the setup for the **Flask backend implementation**.
+2. **Flask Radio Selection**: Added the `checked` attribute to the "Backend" radio button on line 25 to streamline the process for Flask users.
+3. **Appwrite Radio Selection**: Updated the `checked` attribute on line 26 to improve the default experience for the **Appwrite implementation**.
+
+
+Only these changes are made, other then that, no changes are made in the Graphical User Interface.
 
 ---
 
-This project implements a secure authentication and file management system using **two distinct backend approaches** as required:
-1. A **Custom Backend** built with Python (Flask) and PostgreSQL.
-2. A **Managed Backend** using Appwrite (BaaS) with a custom JavaScript adapter.
+## Security Features and Seed-Data (Flask Backend)
 
-The project features secure password hashing using Argon3, strict data isolation (IDOR prevention)
+1. **Password Hashing**: Implemented **Argon2id** for secure password hashing and user authentication.
+2. **UUID User IDs**: Maintained static IDs from `seed-data.json` for existing mock accounts, but implemented **UUIDv4** for all newly registered users. This prevents sequential ID harvesting attacks and enhances system security.
+3. **Database Seeding**: Created a `seed_data_into_db()` function in `seed.py` to automatically parse and insert the contents of `seed-data.json` into the PostgreSQL database.
+4. Introduced an `AppSettings` table to track whether the seed data has already been populated. On server startup, the application checks this Boolean flag; it skips the seeding process if it is `True`, preventing duplicate database entries.
+
+   
 ---
 **In This Project, I've Used **session** based authentication over JWT because:**
 
