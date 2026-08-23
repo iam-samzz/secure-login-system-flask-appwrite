@@ -3,18 +3,17 @@
 
 ## SETUP AND INSTALLATION
 
-## FOR BACKEND (FLASK APP):
+## Running the Flask Backend
 
-1. Clone this repo to your local computer.
-2. Open the `/flask_backend_implementation` folder.
-3. Open the `.env.example` file.
-4. In `.env.example`, there are examples of local variables which you need to enter before running the app.
-5. Replace the sample PostgreSQL database URL with your actual URL (make sure the format is exactly the same).
-6. Replace the sample secret key with your own secret key or some random long password.
-7. Once you change the local variables in `.env.example`, type `cp .env.example .env` in your terminal (inside `/flask_backend_implementation`).
-8. Then, type `python app.py` in your terminal to run the server and open `http://localhost:5000` to view the page.
-9. **Note:** Do all the above steps inside `/flask_backend_implementation`.
-10. If you are a Windows user, you can also just double-click the `start.bat` file inside `/flask_backend_implementation`.
+1. **Clone the repository** to your local computer.
+2. **Navigate to the backend folder:** Open the `/flask_backend_implementation` directory. *(Note: All subsequent steps must be performed inside this folder).*
+3. **Configure environment variables:** Open the `.env.example` file in a text editor. This file contains placeholder values required to run the app.
+4. **Update the Database URL:** Replace the sample PostgreSQL database URL with your actual local database URL (ensure the format matches exactly).
+5. **Update the Secret Key:** Replace the sample secret key with your own secure, randomly generated string.
+6. **Create the `.env` file:** Once you have updated the variables in `.env.example`, type `cp .env.example .env` in your terminal to generate the active environment file. *(Windows users can also just copy and rename the file manually in File Explorer).*
+7. **Start the server:** Type `python app.py` in your terminal to run the server.
+8. **View the application:** Open your web browser and navigate to `http://localhost:5000`.
+9. **Windows Alternative:** If you are a Windows user, you can skip the manual terminal commands entirely by simply double-clicking the `start.bat` file inside the `/flask_backend_implementation` folder to automatically configure and start the server.
 
 
 This project implements a secure authentication and file management system using **two distinct backend approaches** as required:
