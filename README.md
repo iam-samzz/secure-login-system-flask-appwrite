@@ -11,9 +11,11 @@
 4. **Update the Database URL:** Replace the sample PostgreSQL database URL with your actual local database URL (ensure the format matches exactly).
 5. **Update the Secret Key:** Replace the sample secret key with your own secure, randomly generated string.
 6. **Create the `.env` file:** Once you have updated the variables in `.env.example`, type `cp .env.example .env` in your terminal to generate the active environment file. *(Windows users can also just copy and rename the file manually in File Explorer).*
-7. **Start the server:** Type `python app.py` in your terminal to run the server.
-8. **View the application:** Open your web browser and navigate to `http://localhost:5000`.
-9. **Windows Alternative:** If you are a Windows user, you can skip the manual terminal commands entirely by simply double-clicking the `start.bat` file inside the `/flask_backend_implementation` folder to automatically configure and start the server.
+7. Windows: `py -m pip install -r requirements.txt`
+8. macOS / Linux: `python3 -m pip install -r requirements.txt`
+9. **Start the server:** Type `python app.py` in your terminal to run the server.
+10. **View the application:** Open your web browser and navigate to `http://localhost:5000`.
+11. **Windows Alternative:** If you are a Windows user, you can skip the manual terminal commands entirely by simply double-clicking the `start.bat` file inside the `/flask_backend_implementation` folder to automatically configure and start the server.
 
 
 This project implements a secure authentication and file management system using **two distinct backend approaches** as required:
