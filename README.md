@@ -10,6 +10,8 @@ This project implements a secure login system authentication and file access sys
 
 *Better clone repo and run this proj inside python virtual env for avoiding any kind of external errors.*
 
+***Open `localhost:xxxx` in BROWSER only. Dont open in VS Code directly***
+
 ## Running the Flask Backend
 
 1. **Clone the repository** to your local computer.
