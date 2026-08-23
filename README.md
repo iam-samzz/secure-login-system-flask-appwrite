@@ -24,6 +24,9 @@ This project implements a secure login system authentication and file access sys
 10. **View the application:** Open your web browser and navigate to `http://localhost:5000`.
 11. **Windows Alternative:** If you are a Windows user, you can skip the manual terminal commands entirely by simply double-clicking the `start.bat` file inside the `/flask_backend_implementation` folder to automatically configure and start the server.
 
+
+
+
 <figure>
    <img width="877" height="327" alt="image" src="https://github.com/user-attachments/assets/589a38e6-f6d4-4e7b-b0be-cfc842fc9aab" style="display:inline"/>
    <br>
