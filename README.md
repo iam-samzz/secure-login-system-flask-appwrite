@@ -36,7 +36,8 @@ This project implements a secure login system authentication and file access sys
 </figure>
 
 <figure>
-   <img width="877" height="400" alt="image" src="https://github.com/user-attachments/assets/882425e0-0ce3-469a-8468-d54b0c39fd8e" />
+   <img width="877" height="400" alt="image" src="https://github.com/user-attachments/assets/20790724-9e81-4e50-a48e-6dc541ad707b" />
+   
    <br>
    <figcaption>Sample app test</figcaption>
 </figure>
